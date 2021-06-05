@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@color/primary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btnEdit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_baseline_edit_24" />
+
+        <ImageView
+            android:id="@+id/btnDelete"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_delete_24" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_toLeftOf="@id/btnDelete"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/btnEdit"
+            android:gravity="top|center_horizontal"
+            android:text="date"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtMemo"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+</LinearLayout>
